@@ -1,0 +1,9 @@
+version: '3.5'
+services:
+  node:
+    container_name: dlna_node
+    build:
+      context: ./node
+      dockerfile: Dockerfile
+    volumes:
+      - ./src:/var/src
